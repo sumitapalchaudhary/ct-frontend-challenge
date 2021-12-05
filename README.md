@@ -1,11 +1,13 @@
-# Invite code challenge
+This application sends invitation to users from the list. After api call is completed, redirect to invite list page and display the collected status.
 
-The task of this code challenge is to send an invitation to each of the users from the list (located in `invite.component.ts`).
-You need to make api call sequentially for each email and to display the collected results info afterwards on `invite-list.component.html` (redirect to `invite-list` page once the last email is sent). 
+To run the application run command 'npm run start:all' and navigate to 'http://localhost:4200/'.
 
-The error messages should be displayed individually with the information on the error content (e.g. _user1@comtravo.com already exists_). 
-Successful invitations should all be given in the form of their total number (e.g. _5 users successfully invited_).
 
-## Development server
+Default page:
+<img width="562" alt="image" src="https://user-images.githubusercontent.com/30353316/144760891-ebb4e19c-d8af-4323-b950-e1dc42cbb0e5.png">
 
-Run `npm run start:all` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+On click of the link 'List'
+<img width="551" alt="image" src="https://user-images.githubusercontent.com/30353316/144760978-a20372b5-0b44-426c-9f63-5299f5d62e52.png">
+
+On the default page or Invite page, when user clicks on the button 'Invite', api is called and invitation is sent to the users, and page is redirected to 'Invite list' page displaying the invitation status.
+<img width="467" alt="image" src="https://user-images.githubusercontent.com/30353316/144761059-9c8dc149-d88e-402b-af53-e041ca32df38.png">
