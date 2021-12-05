@@ -1,4 +1,4 @@
-<table>
+<table *ngIf='showUsers'>
   <thead>
     <tr>
       <th>Id</th>
@@ -9,6 +9,18 @@
     <tr *ngFor="let user of (users$ | async)">
       <td>{{ user.id }}</td>
       <td>{{ user.email }}</td>
+    </tr>
+  </tbody>
+</table>
+<table *ngIf='showInviteStatus'>
+  <thead>
+    <tr>
+      <th>User Invitation Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of (display)">
+      <td>{{ data }}</td>
     </tr>
   </tbody>
 </table>

@@ -9,8 +9,8 @@ const routes: Routes = [
     children: [
       { path: 'list', component: InviteListComponent },
       { path: 'invite', component: InviteComponent },
-      { path: '', redirectTo: 'list', pathMatch: 'full' },
-      { path: '**', redirectTo: 'list' }
+      { path: '', redirectTo: 'invite', pathMatch: 'full' },
+      { path: '**', redirectTo: 'invite' }
     ]
   }
 ];
